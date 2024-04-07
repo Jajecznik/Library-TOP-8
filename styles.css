@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo>img {
+    width: 64px;
+}
+
+.logo>h1 {
+    font-size: 3rem;
+    padding: 10px;
+}
+
+#new-book-form {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.section {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section>label {
+    margin: 0 0 4px 4px;
+    font-size: 1.25rem;
+}
+
+.section>input {
+    padding: 4px;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    border: 1px solid;
+}
+
+.section>input:focus {
+    outline: none;
+    border-color: blue;
+}
+
+.section>input:active {
+    outline: none;
+    border-color: blue;
+}
+
+.section>input:valid {
+    border-color: greenyellow;
+}
+
+
+.section>input:invalid {
+    border-color: red;
+}
+
+.section>input[type=checkbox] {
+    height: 2rem;
+    cursor: pointer;
+}
+
+#add-book,
+button {
+    align-self: center;
+    padding: 12px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 2px solid orange;
+    cursor: pointer;
+    color: black;
+    background-color: violet;
+    transition: 0.6s ease-in-out;
+}
+
+button {
+    font-size: 1rem;
+}
+
+#add-book:hover,
+button:hover {
+    border: 2px solid violet;
+}
+
+.content {
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.card-content-container>p:nth-child(odd) {
+    color: #666666;
+}
+
+.card-content-container>p:nth-child(even) {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.buttons-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons-container button {
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}

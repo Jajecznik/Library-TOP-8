@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Library</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/icon.png" alt="book icon">
+            <h1>Library</h1>
+        </div>
+        <form id="new-book-form">
+            <div class="section">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" required>
+            </div>
+            <div class="section">
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author" required>
+            </div>
+            <div class="section">
+                <label for="number-of-pages">Number of pages</label>
+                <input type="number" name="numberOfPages" id="number-of-pages" min="1" max="99999" required>
+            </div>
+            <div class="section">
+                <label for="is-read">Is Read?</label>
+                <input type="checkbox" name="isRead" id="is-read">
+            </div>
+            <input type="submit" id="add-book" value="Add book">
+        </form>
+    </header>
+    <div class="content"></div>
+</body>
+
+</html>
